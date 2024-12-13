@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>activity_login.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_login.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.LoginActivity&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;View</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/view&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;150dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;-5dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/poly&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tvSignup&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_centerHorizontal</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;LOGIN&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;@id/view&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;@id/view&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/appLogo&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;56dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;44dp&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/logo&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;20dp&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@id/view&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;androidx.cardview.widget.CardView</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+        <span class="s1">app:cardElevation</span><span class="s2">=&quot;5dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;54dp&quot;</span>
+        <span class="s1">android:layout_marginHorizontal</span><span class="s2">=&quot;46dp&quot;</span>
+        <span class="s1">app:cardBackgroundColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@id/appLogo&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+            <span class="s1">android:layout_marginVertical</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_marginHorizontal</span><span class="s2">=&quot;25dp&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Username&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#3C3C3C&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;EditText</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingHorizontal</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/edt_bg&quot;</span>
+                <span class="s1">android:hint</span><span class="s2">=&quot;Enter your username&quot;</span>
+                <span class="s1">android:textColorHint</span><span class="s2">=&quot;#3C3C3C&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Password&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#3C3C3C&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;EditText</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;45dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingHorizontal</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/edt_bg&quot;</span>
+                <span class="s1">android:hint</span><span class="s2">=&quot;Enter your password&quot;</span>
+                <span class="s1">android:textColorHint</span><span class="s2">=&quot;#3C3C3C&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;androidx.appcompat.widget.AppCompatButton</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/btnLogin&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;45dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;24dp&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Login&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/btn_bg&quot;</span>
+                <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/white&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Forgot Password?&quot;</span>
+                <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#3C3C3C&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+    <span class="s0">&lt;/androidx.cardview.widget.CardView&gt;</span>
+
+    <span class="s0">&lt;LinearLayout</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;20dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:focusable</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Already have an account? &quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/tvLoginRedirect&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:focusable</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;#E61B1B&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Sign up&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+    <span class="s4">&lt;!-- Header with Signup text --&gt;</span>
+
+   <span class="s4">&lt;!-- &lt;LinearLayout 
+        android:id=&quot;@+id/linearLayout&quot; 
+        android:layout_width=&quot;405dp&quot; 
+        android:layout_height=&quot;541dp&quot; 
+        android:layout_marginBottom=&quot;174dp&quot; 
+        android:gravity=&quot;center_horizontal&quot; 
+        android:orientation=&quot;vertical&quot; 
+        app:layout_constraintBottom_toBottomOf=&quot;parent&quot; 
+        app:layout_constraintEnd_toEndOf=&quot;parent&quot; 
+        app:layout_constraintStart_toStartOf=&quot;parent&quot; 
+        app:layout_constraintTop_toTopOf=&quot;parent&quot;&gt; 
+ 
+        &amp;lt;!&amp;ndash; App Logo &amp;ndash;&amp;gt; 
+ 
+        &amp;lt;!&amp;ndash; Name Field &amp;ndash;&amp;gt; 
+ 
+        &lt;TextView 
+            android:id=&quot;@+id/tvSignup&quot; 
+            android:layout_width=&quot;wrap_content&quot; 
+            android:layout_height=&quot;wrap_content&quot; 
+            android:layout_centerHorizontal=&quot;true&quot; 
+            android:text=&quot;LOGIN&quot; 
+            android:textColor=&quot;@android:color/black&quot; 
+            android:textSize=&quot;24sp&quot; 
+            android:textStyle=&quot;bold&quot; /&gt; 
+ 
+        &lt;ImageView 
+            android:id=&quot;@+id/appLogo&quot; 
+            android:layout_width=&quot;50dp&quot; 
+            android:layout_height=&quot;115dp&quot; 
+            android:layout_marginTop=&quot;25dp&quot; 
+            android:layout_marginBottom=&quot;16dp&quot; 
+            android:src=&quot;@drawable/logo&quot; /&gt; 
+ 
+        &lt;EditText 
+            android:id=&quot;@+id/etName&quot; 
+            android:layout_width=&quot;match_parent&quot; 
+            android:layout_height=&quot;91dp&quot; 
+            android:layout_marginBottom=&quot;12dp&quot; 
+            android:hint=&quot;User Name&quot; 
+            android:inputType=&quot;textPersonName&quot; 
+            android:padding=&quot;12dp&quot; /&gt; 
+ 
+        &amp;lt;!&amp;ndash; Email Field &amp;ndash;&amp;gt; 
+ 
+        &amp;lt;!&amp;ndash; Password Field &amp;ndash;&amp;gt; 
+        &lt;EditText 
+            android:id=&quot;@+id/etPassword&quot; 
+            android:layout_width=&quot;match_parent&quot; 
+            android:layout_height=&quot;77dp&quot; 
+            android:layout_marginBottom=&quot;12dp&quot; 
+            android:hint=&quot;Password&quot; 
+            android:inputType=&quot;textPassword&quot; 
+            android:padding=&quot;12dp&quot; /&gt; 
+ 
+        &lt;EditText 
+            android:id=&quot;@+id/etConfirmPassword&quot; 
+            android:layout_width=&quot;224dp&quot; 
+            android:layout_height=&quot;wrap_content&quot; 
+            android:layout_below=&quot;@id/etPassword&quot; 
+            android:layout_marginHorizontal=&quot;12dp&quot; 
+            android:layout_marginTop=&quot;16dp&quot; 
+            android:background=&quot;@android:drawable/editbox_background_normal&quot; 
+            android:hint=&quot;Forget Password?&quot; 
+            android:inputType=&quot;textPassword&quot; 
+            android:padding=&quot;12dp&quot; /&gt; 
+ 
+ 
+ 
+        &amp;lt;!&amp;ndash; Signup Button &amp;ndash;&amp;gt; 
+        &lt;Button 
+            android:id=&quot;@+id/btnSignup&quot; 
+            android:layout_width=&quot;match_parent&quot; 
+            android:layout_height=&quot;51dp&quot; 
+            android:layout_marginTop=&quot;16dp&quot; 
+            android:text=&quot;Login&quot; 
+            android:textColor=&quot;@android:color/white&quot; /&gt; 
+ 
+        &amp;lt;!&amp;ndash; Already Have an Account &amp;ndash;&amp;gt; 
+        &lt;TextView 
+            android:id=&quot;@+id/tvLoginRedirect&quot; 
+            android:layout_width=&quot;wrap_content&quot; 
+            android:layout_height=&quot;53dp&quot; 
+            android:layout_marginTop=&quot;1dp&quot; 
+            android:clickable=&quot;true&quot; 
+            android:focusable=&quot;true&quot; 
+            android:text=&quot;Already have an account? Sign up &quot; /&gt; 
+ 
+    &lt;/LinearLayout&gt; 
+--&gt;</span>
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>
