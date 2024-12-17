@@ -103,30 +103,36 @@ L
         tools:layout_editor_absoluteY="778dp" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:padding="16dp"
-        android:weightSum="2">
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <Button
-            android:id="@+id/button_back"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="800dp"
-            android:background="@drawable/btn_bg1"
-            android:text="Back" />
+            android:layout_marginHorizontal="8dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bgpurple"
+            android:textColor="@android:color/white" />
 
-        <Button
-            android:id="@+id/button_next"
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="800dp"
-            android:text="Next" />
-
+            android:layout_marginHorizontal="8dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bgpurple"
+            android:textColor="@android:color/white" />
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

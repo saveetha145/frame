@@ -6,8 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background1"
-    tools:context=".SizeActivity">
+    tools:context=".Digital">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="vertical">
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -22,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="SIZE OF FRAMES"
+        android:text="DIGITAL ART"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -31,49 +37,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <EditText
-        android:layout_width="366dp"
-        android:layout_height="33dp"
-        android:background="@drawable/btn_bgblue"
-        android:hint="Click and slecet the size of the frame"
-        android:paddingHorizontal="90dp"
-        android:textColorHint="#3C3C3C"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="742dp" />
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
 
-    <LinearLayout
-
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginVertical="20dp"
-    android:layout_marginHorizontal="25dp">
-
-        <ImageView
-            android:id="@+id/appLogo"
-            android:layout_width="389dp"
-            android:layout_height="46dp"
-            android:layout_marginHorizontal=""
-            android:layout_marginTop="155dp"
-            android:src="@drawable/logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view" />
-
-
-        <ImageView
-            android:id="@+id/appLogo"
-            android:layout_width="389dp"
-            android:layout_height="311dp"
-            android:layout_marginHorizontal=""
-            android:layout_marginTop="155dp"
-            android:src="@drawable/size"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view" />
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="381dp"
+        android:layout_height="555dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/digitalart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,6 +78,16 @@
             android:background="@drawable/btn_bgpurple"
             android:textColor="@android:color/white" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSelect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bgpurple"
+            android:textColor="@android:color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"

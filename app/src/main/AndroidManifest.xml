@@ -13,6 +13,63 @@
         android:theme="@style/Theme.Wallwhiz"
         tools:targetApi="31">
         <activity
+            android:name=".Adminprofile"
+            android:exported="false" />
+        <activity
+            android:name=".Truck"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".AR"
+            android:exported="false" />
+        <activity
+            android:name=".Oilpaint"
+            android:exported="false" />
+        <activity
+            android:name=".WoodenArt1"
+            android:exported="false" />
+        <activity
+            android:name=".Woodenart"
+            android:exported="false" />
+        <activity
+            android:name=".mosaic"
+            android:exported="false" />
+        <activity
+            android:name=".Digital"
+            android:exported="false" />
+        <activity
+            android:name=".PencilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Woodenfram"
+            android:exported="false" />
+        <activity
+            android:name=".Wooden_frame"
+            android:exported="false" />
+        <activity
+            android:name=".Wooden"
+            android:exported="false" />
+        <activity
+            android:name=".Woodenframe"
+            android:exported="false" />
+        <activity
+            android:name=".Glassframe"
+            android:exported="false" />
+        <activity
+            android:name=".Acrylicdesgin"
+            android:exported="false" />
+        <activity
+            android:name=".Acrylic"
+            android:exported="false" />
+        <activity
+            android:name=".Acrylicactivity"
+            android:exported="false" />
+        <activity
             android:name=".SizeActivity"
             android:exported="false" />
         <activity
