@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background1"
-    tools:context=".Delivery">
+    tools:context=".Truck">
 
 
     <View
@@ -38,49 +38,57 @@
         android:id="@+id/details_title"
         android:layout_width="wrap_content"
         android:layout_height="44dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:text="Your Wall just Got a Whiz of Magic!..."
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.006" />
 
     <TextView
         android:id="@+id/details_title"
         android:layout_width="401dp"
         android:layout_height="124dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
         android:text="Thanks for making us a part of your story"
         android:textColor="#1B14F2"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/truck_image" />
+        app:layout_constraintTop_toBottomOf="@+id/truck_image"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/appLogo"
         android:layout_width="56dp"
         android:layout_height="44dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="172dp"
         android:layout_height="105dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/truck"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/appLogo"
+        app:layout_constraintVertical_bias="0.041" />
 
     <ImageView
         android:id="@+id/truck_image"
@@ -88,7 +96,44 @@
         android:layout_height="112dp"
         android:layout_marginTop="76dp"
         android:background="@drawable/Hearts"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgpurple"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_title"
+        app:layout_constraintVertical_bias="0.997" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgpurple"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

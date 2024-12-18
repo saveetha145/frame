@@ -10,12 +10,15 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="-5dp"
+        android:layout_width="407dp"
+        android:layout_height="149dp"
         android:background="@drawable/poly"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/ID"
@@ -28,10 +31,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/view"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintVertical_bias="0.294" />
-
+        app:layout_constraintVertical_bias="0.305" />
 
     <ImageView
         android:id="@+id/appLogo"
@@ -51,24 +54,31 @@
         android:layout_width="327dp"
         android:layout_height="431dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="89dp"
         android:background="@android:color/darker_gray"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"><![CDATA[>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"><![CDATA[
 
 
 
-        ]]></FrameLayout>
 
-    <LinearLayout
-        android:layout_width="308dp"
-        android:layout_height="76dp"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="821dp">
+        ]]>
+
+        ]]>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="214dp"
+            android:layout_height="91dp"
+            android:layout_marginBottom="204dp"
+            android:text="Live camera view"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/btn_adjust"
@@ -81,30 +91,57 @@
         android:padding="12dp"
         android:text="ADJUST"
         android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangles" />
+        app:layout_constraintTop_toBottomOf="@+id/rectangles"
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
         android:id="@+id/btn_position"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
         android:layout_weight="1"
         android:backgroundTint="@color/black"
         android:padding="1dp"
         android:text="POSITION OF FRAME"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_adjust" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="213dp"
-        android:layout_height="90dp"
-        android:text="Live camera view"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="153dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgpurple"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_adjust"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgpurple"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_position"
+        app:layout_constraintVertical_bias="0.04" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,17 +42,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view" />
 
+
     <ImageView
         android:id="@+id/a"
-        android:layout_width="433dp"
-        android:layout_height="515dp"
-        android:layout_marginTop="104dp"
+        android:layout_width="387dp"
+        android:layout_height="503dp"
+        android:layout_marginTop="56dp"
         android:src="@drawable/WOODEN"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
-
+        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,38 +60,41 @@
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a"
+        app:layout_constraintVertical_bias="0.87"
+        tools:layout_editor_absoluteX="0dp">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bgpurple"
             android:text="Back"
             android:textAllCaps="false"
-            android:background="@drawable/btn_bgpurple"
             android:textColor="@android:color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSelect"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bgpurple"
             android:text="Select"
             android:textAllCaps="false"
-            android:background="@drawable/btn_bgpurple"
             android:textColor="@android:color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bgpurple"
             android:text="Next"
             android:textAllCaps="false"
-            android:background="@drawable/btn_bgpurple"
             android:textColor="@android:color/white" />
     </LinearLayout>
 

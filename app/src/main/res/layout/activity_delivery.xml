@@ -33,17 +33,19 @@
         app:layout_constraintTop_toTopOf="@id/view"
         app:layout_constraintVertical_bias="0.294" />
 
+
     <ImageView
         android:id="@+id/appLogo"
         android:layout_width="56dp"
         android:layout_height="44dp"
         android:layout_marginTop="12dp"
         android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/customize_frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
-
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/customize_frame"
@@ -52,8 +54,12 @@
         android:layout_centerHorizontal="true"
         android:background="#d3d3d3"
         android:gravity="center"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="217dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273">
 
         <TextView
             android:id="@+id/customize_frame_text"
@@ -66,13 +72,18 @@
 
     <LinearLayout
         android:id="@+id/details"
-        android:layout_width="381dp"
-        android:layout_height="408dp"
+        android:layout_width="384dp"
+        android:layout_height="348dp"
         android:layout_below="@id/customize_frame"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:paddingTop="20dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="363dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customize_frame"
+        app:layout_constraintVertical_bias="0.02">
 
 
         <!-- App Logo -->
@@ -117,66 +128,79 @@
             android:textColor="#000000"
             android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginBottom="124dp"
+            android:text="MODE OF PAYMENT:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/details_title"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:text="MODE OF PAYMENT:"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="657dp" />
-
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout8"
+        android:layout_width="399dp"
+        android:layout_height="88dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bgpurple"
             android:text="Back"
             android:textAllCaps="false"
-            android:background="@drawable/btn_bgpurple"
             android:textColor="@android:color/white" />
 
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bgpurple"
             android:text="Next"
             android:textAllCaps="false"
-            android:background="@drawable/btn_bgpurple"
             android:textColor="@android:color/white" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/appLogo"
-        android:layout_width="306dp"
-        android:layout_height="70dp"
-        android:src="@drawable/scanner"
-        tools:ignore="DuplicateIds"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="738dp" />
+        android:layout_width="166dp"
+        android:layout_height="101dp"
+        android:src="@drawable/gpay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
 
     <ImageView
         android:id="@+id/appLogo"
         android:layout_width="110dp"
-        android:layout_height="80dp"
-        android:src="@drawable/gpay"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="732dp" />
+        android:layout_height="92dp"
+        android:src="@drawable/scanner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839"
+        tools:ignore="DuplicateIds" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
